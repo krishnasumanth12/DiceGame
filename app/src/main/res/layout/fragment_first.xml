@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:text="@string/play"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <ImageView
+        android:id="@+id/fragment_first_left_dice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="132dp"
+        android:contentDescription="@string/description_left_dice"
+        android:src="@drawable/dice_1"
+        app:layout_constraintEnd_toEndOf="@+id/play_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fragment_first_right_dice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="208dp"
+        android:contentDescription="@string/description_right_dice"
+        android:src="@drawable/dice_2"
+        app:layout_constraintStart_toEndOf="@+id/fragment_first_left_dice"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
